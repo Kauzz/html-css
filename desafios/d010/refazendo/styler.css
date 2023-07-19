@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
@@ -8,7 +9,7 @@
     font-weight: normal;
 }
 
-
+/* Variaveis */
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -22,11 +23,12 @@
     --font-android: 'Android', sans-serif;
 }
 
+/* Cérebro */
 * {
     margin: 0px;
 }
 
-
+/* Corpo */
 body {
     background-color: var(--cor0);
 }
@@ -174,4 +176,23 @@ footer {
     padding: 20px;
 
     text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* Classes */
+.links {
+    background-color: var(--cor1);
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    color: black;
+}
+.links::after {
+    content: '\00A0\1F517';
+}
+.links:hover {
+    text-decoration: underline;
 }
